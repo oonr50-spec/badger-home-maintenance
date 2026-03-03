@@ -159,6 +159,12 @@ body {
   position: relative;
   z-index: 1;
 }background-image: url("./images/work1.jpg.png");
+.about {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.6;
+}
 
 
 
