@@ -198,7 +198,59 @@ h2 {
 .social a:hover {
   background-color: #162a45;
 }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1f3a60, #2c5364);
+  color: #222;
+}
+.services,
+.before-after,
+.about,
+.reviews,
+.google-profile {
+  background: white;
+  padding: 60px 20px;
+  margin: 40px auto;
+  max-width: 1100px;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
 
+.service-card {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  background: #e8e8e8;
+}
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.image-box {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
 
 
 
