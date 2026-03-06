@@ -2,7 +2,12 @@ body {
   background-image: url("./images/work1.jpg.png");
   background-size: cover;
 }
-
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f4f7f6, #dce7e4);
+  margin: 0;
+  padding: 0;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -284,6 +289,14 @@ body {
   color: #2c5e4f;
   margin-bottom: 30px;
 }
-
+section {
+  background: white;
+  margin: 40px auto;
+  padding: 40px;
+  width: 90%;
+  max-width: 1100px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
 
 
