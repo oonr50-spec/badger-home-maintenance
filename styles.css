@@ -11,9 +11,9 @@ body {
 }
 
 body {
-  background: #f7f7f7;
-  color: #2b2b2b;
-  line-height: 1.6;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f2f5f7, #dfe7ec);
 }
 
 .container {
@@ -102,8 +102,27 @@ body {
   transition: 0.3s ease;
 }
 
+.service-card {
+  background: #2c5e4f;
+  color: white;
+  padding: 25px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.service-card h3 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.service-card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .service-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-5px);
+  background: #1f4237;
 }
 .contact {
   text-align: center;
@@ -270,8 +289,18 @@ body {
   box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
 
-
-
+.what-we-do {
+  background: white;
+  padding: 60px;
+  border-radius: 12px;
+  max-width: 1100px;
+  margin: 40px auto;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+.what-we-do h2 {
+  color: #2c5e4f;
+  margin-bottom: 30px;
+}
 
 
 
