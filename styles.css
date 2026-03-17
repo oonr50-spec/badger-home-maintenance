@@ -372,3 +372,25 @@ font-size:18px;
 .review.active{
 display:block;
 }
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input, textarea{
+padding:12px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button{
+background:#f4a261;
+border:none;
+padding:12px;
+color:white;
+font-weight:bold;
+cursor:pointer;
+}
