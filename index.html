@@ -18,7 +18,35 @@ gtag('config', 'G-1NDH667YYZ');
 </script>
 
 </head>
+<script>
 
+let slider = document.querySelector(".ba-slider");
+let handle = document.querySelector(".handle");
+let resize = document.querySelector(".resize");
+
+let dragging = false;
+
+handle.addEventListener("mousedown", () => dragging = true);
+window.addEventListener("mouseup", () => dragging = false);
+
+window.addEventListener("mousemove", function(e){
+
+if(!dragging) return;
+
+let rect = slider.getBoundingClientRect();
+let x = e.clientX - rect.left;
+
+let percent = (x / rect.width) * 100;
+
+if(percent < 0) percent = 0;
+if(percent > 100) percent = 100;
+
+resize.style.width = percent + "%";
+handle.style.left = percent + "%";
+
+});
+
+</script>
 <body>
 
 
