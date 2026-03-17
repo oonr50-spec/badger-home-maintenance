@@ -11,6 +11,14 @@ body{
 background: linear-gradient(135deg,#1f3a60,#2c5364);
 color:#333;
 line-height:1.6;
+
+/* logo watermark background */
+background-image: url("images/logo.png");
+background-repeat:no-repeat;
+background-position:center;
+background-size:500px;
+background-attachment:fixed;
+opacity:1;
 }
 
 /* ---------- Container ---------- */
@@ -31,17 +39,29 @@ background-position:center;
 
 color:white;
 text-align:center;
-padding:100px 20px;
+padding:110px 20px;
 }
 
 .header h1{
-font-size:42px;
+font-size:44px;
+margin-bottom:10px;
+}
+
+.tagline{
+font-size:18px;
 margin-bottom:10px;
 }
 
 .phone{
-font-size:20px;
+font-size:22px;
 font-weight:bold;
+margin-bottom:10px;
+}
+
+/* ---------- Logo ---------- */
+.logo{
+width:120px;
+margin-bottom:15px;
 }
 
 /* ---------- Sections ---------- */
@@ -58,6 +78,7 @@ box-shadow:0 10px 25px rgba(0,0,0,0.08);
 h2{
 color:#2c5e4f;
 margin-bottom:20px;
+font-size:28px;
 }
 
 /* ---------- Services Grid ---------- */
@@ -81,20 +102,6 @@ transform:translateY(-6px);
 background:#1f4237;
 }
 
-/* ---------- Gallery ---------- */
-.gallery-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
-margin-top:20px;
-}
-
-.gallery-grid img{
-width:100%;
-border-radius:10px;
-box-shadow:0 6px 20px rgba(0,0,0,0.2);
-}
-
 /* ---------- Before & After ---------- */
 .project{
 display:flex;
@@ -114,6 +121,25 @@ border-radius:10px;
 box-shadow:0 8px 20px rgba(0,0,0,0.15);
 }
 
+/* ---------- Gallery ---------- */
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+margin-top:20px;
+}
+
+.gallery-grid img{
+width:100%;
+border-radius:10px;
+box-shadow:0 6px 20px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.05);
+}
+
 /* ---------- Buttons ---------- */
 .button{
 display:inline-block;
@@ -124,6 +150,7 @@ text-decoration:none;
 border-radius:6px;
 font-weight:bold;
 margin-top:10px;
+transition:0.3s;
 }
 
 .button:hover{
@@ -135,15 +162,6 @@ background:#e18b4e;
 text-align:center;
 }
 
-/* ---------- Reviews ---------- */
-.review-card{
-background:white;
-padding:20px;
-margin:15px 0;
-border-left:5px solid #f4a261;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
-}
-
 /* ---------- Social Links ---------- */
 .social a{
 display:inline-block;
@@ -153,6 +171,7 @@ background:#2c5e4f;
 color:white;
 text-decoration:none;
 border-radius:5px;
+transition:0.3s;
 }
 
 .social a:hover{
@@ -166,16 +185,4 @@ color:white;
 text-align:center;
 padding:25px;
 margin-top:40px;
-}
-.logo{
-width:120px;
-margin-bottom:15px;
-}
-
-body{
-font-family:Arial, Helvetica, sans-serif;
-margin:0;
-padding:0;
-
-background: linear-gradient(135deg,#1f3a60,#2c5364);
 }
