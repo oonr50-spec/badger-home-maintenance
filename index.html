@@ -8,6 +8,25 @@
 </header>
   
 <head>
+  <script>
+
+let reviews = document.querySelectorAll(".review");
+let index = 0;
+
+function showReview(){
+
+reviews.forEach(r => r.classList.remove("active"));
+
+index++;
+if(index >= reviews.length){index = 0;}
+
+reviews[index].classList.add("active");
+
+}
+
+setInterval(showReview,4000);
+
+</script>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -274,7 +293,30 @@ Every job is completed professionally with attention to detail.
 </div>
 
 <div class="review">
-⭐⭐⭐⭐⭐  
+⭐⭐⭐⭐⭐  <section id="reviews">
+
+<h2>Customer Reviews</h2>
+
+<div class="review-slider">
+
+<div class="review active">
+⭐⭐⭐⭐⭐
+<p>Excellent work and very professional.</p>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>Reliable handyman. Highly recommend.</p>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>Great communication and clean work.</p>
+</div>
+
+</div>
+
+</section>
 <p>Reliable handyman, great communication.</p>
 <span>– Homeowner</span>
 </div>
