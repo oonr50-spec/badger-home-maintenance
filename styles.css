@@ -233,3 +233,73 @@ padding:10px;
 border-radius:50%;
 font-size:18px;
 }
+/* FLOATING BUTTONS */
+
+.floating-buttons{
+position:fixed;
+bottom:20px;
+right:20px;
+display:flex;
+flex-direction:column;
+gap:12px;
+z-index:999;
+}
+
+.call-btn,
+.whatsapp-btn{
+width:55px;
+height:55px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+font-size:24px;
+color:white;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.call-btn{
+background:#f4a261;
+}
+
+.whatsapp-btn{
+background:#25D366;
+}
+
+/* GALLERY ANIMATION */
+
+.gallery-grid img{
+transition:0.4s;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.08);
+}
+
+/* REVIEW SLIDER */
+
+.review-slider{
+display:flex;
+gap:20px;
+overflow-x:auto;
+padding:20px 0;
+}
+
+.review{
+min-width:260px;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* PROFESSIONAL TOUCH */
+
+section{
+transition:0.3s;
+}
+
+section:hover{
+transform:translateY(-3px);
+}
