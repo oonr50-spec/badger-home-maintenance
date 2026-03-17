@@ -330,3 +330,21 @@ color:white;
 text-decoration:none;
 font-weight:bold;
 }
+.slider{
+position:relative;
+max-width:600px;
+margin:auto;
+}
+
+.slider img{
+width:100%;
+display:block;
+}
+
+.after{
+position:absolute;
+top:0;
+left:0;
+width:50%;
+overflow:hidden;
+}
