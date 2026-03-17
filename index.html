@@ -1,250 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <header class="hero">
-  <h1>Badger Home Maintenance</h1>
-  <p>Professional Handyman Services</p>
-  <a href="#contact" class="btn">Get a Free Quote</a>
-</header>
-  
 <head>
-  <meta name="description" content="Professional handyman services including painting, tiling, driveway paving and home maintenance.">
-
-<meta name="keywords" content="handyman, painting, tiling, driveway paving, home maintenance">
-
-<meta name="author" content="Badger Home Maintenance">
-
-<meta property="og:title" content="Badger Home Maintenance">
-
-<meta property="og:description" content="Professional handyman services">
-  <script>
-
-let reviews = document.querySelectorAll(".review");
-let index = 0;
-
-function showReview(){
-
-reviews.forEach(r => r.classList.remove("active"));
-
-index++;
-if(index >= reviews.length){index = 0;}
-
-reviews[index].classList.add("active");
-
-}
-
-setInterval(showReview,4000);
-
-</script>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Badger Home Maintenance | Handyman Services</title>
+<title>Badger Home Maintenance | Professional Handyman</title>
 
-<meta name="description" content="Badger Home Maintenance provides professional handyman services including repairs, painting, tiling, driveway paving and home improvements.">
+<meta name="description" content="Professional handyman services including painting, tiling, driveway paving and home maintenance.">
 
-<meta name="keywords" content="handyman, home maintenance, painting, tiling, driveway paving, repairs">
-
-<meta name="author" content="Badger Home Maintenance">
+<meta name="keywords" content="handyman, painting, tiling, driveway paving, home maintenance">
 
 <link rel="stylesheet" href="styles.css">
 
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1NDH667YYZ"></script>
-
-<script>
-  <script>
-const slider = document.querySelector(".after");
-
-document.addEventListener("mousemove",function(e){
-
-let width = window.innerWidth;
-let percent = (e.clientX / width) * 100;
-
-slider.style.width = percent + "%";
-
-});
-</script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-1NDH667YYZ');
-</script>
-
 </head>
-<script>
 
-let slider = document.querySelector(".ba-slider");
-let handle = document.querySelector(".handle");
-let resize = document.querySelector(".resize");
+<body>
 
-let dragging = false;
 
-handle.addEventListener("mousedown", () => dragging = true);
-window.addEventListener("mouseup", () => dragging = false);
+<!-- NAVBAR -->
 
-window.addEventListener("mousemove", function(e){
+<nav class="navbar">
 
-if(!dragging) return;
+<div class="container">
 
-let rect = slider.getBoundingClientRect();
-let x = e.clientX - rect.left;
+<h2 class="logo">Badger Home Maintenance</h2>
 
-let percent = (x / rect.width) * 100;
-
-if(percent < 0) percent = 0;
-if(percent > 100) percent = 100;
-
-resize.style.width = percent + "%";
-handle.style.left = percent + "%";
-
-});
-
-</script>
-<div class="floating-buttons">
-
-<a href="tel:07775443049" class="call-btn">
-📞
-</a>
-
-<a href="https://wa.me/447775443049" class="whatsapp-btn">
-💬
-</a>
+<ul class="nav-links">
+<li><a href="#services">Services</a></li>
+<li><a href="#gallery">Work</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 
 </div>
-  <nav class="navbar">
-  <div class="nav-container">
 
-    <h2 class="logo">Badger Home Maintenance</h2>
-
-    <ul class="nav-links">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#gallery">Work</a></li>
-      <li><a href="#reviews">Reviews</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-  </div>
 </nav>
-  <body>
 
 
+<!-- HERO -->
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>Professional Handyman Services</h1>
+
+<p>Repairs • Painting • Tiling • Driveways</p>
+
+<a href="#contact" class="btn">Get a Free Quote</a>
+
+</div>
+
+</header>
 
 
 <!-- ABOUT -->
 
 <section class="about container">
 
-<h2>About Me</h2>
+<h2>About Us</h2>
 
 <p>
-My name is Onr and I run Badger Home Maintenance.
-I am a fully qualified and insured handyman providing reliable,
-high-quality home maintenance services.
+Badger Home Maintenance provides reliable and professional handyman
+services including property repairs, decorating, tiling and driveway work.
 </p>
 
-<p>
-I have experience in property repairs, painting, outdoor work,
-driveway paving, tiling and general home improvements.
-Every job is completed professionally with attention to detail.
-</p>
+<ul class="features">
 
-<ul class="experience">
-<li>✔ Fully qualified handyman</li>
 <li>✔ Fully insured</li>
-<li>✔ Years of practical experience</li>
-<li>✔ Reliable and professional service</li>
+<li>✔ Professional workmanship</li>
+<li>✔ Reliable service</li>
+<li>✔ Competitive pricing</li>
+
 </ul>
 
 </section>
 
 
-
 <!-- SERVICES -->
-    
-<section class="services">
-<h2>Our Services</h2>
 
-<div class="service">
-<h3>Painting</h3>
-<p>Interior and exterior painting for homes.</p>
-</div>
-
-<div class="service">
-<h3>Tiling</h3>
-<p>Professional bathroom and kitchen tiling.</p>
-</div>
-
-<div class="service">
-<h3>Driveway Paving</h3>
-<p>High quality paving and repairs.</p>
-</div>
-
-</section>
-<section class="services container">
+<section id="services" class="services">
 
 <h2>Our Services</h2>
 
 <div class="service-grid">
 
 <div class="service-card">
-<h3>Property Repairs</h3>
-<p>General home repairs and maintenance to keep your property in top condition.</p>
-</div>
-
-<div class="service-card">
-<h3>Painting & Decorating</h3>
-<p>Interior and exterior painting with clean professional finishes.</p>
-</div>
-
-<div class="service-card">
-<h3>Garden & Exterior Work</h3>
-<p>Garden maintenance, fencing, pressure washing and outdoor improvements.</p>
-</div>
-
-<div class="service-card">
-<h3>Driveway Paving</h3>
-<p>Professional driveway paving and outdoor surface improvements.</p>
+<h3>Painting</h3>
+<p>Interior and exterior decorating services.</p>
 </div>
 
 <div class="service-card">
 <h3>Tiling</h3>
-<p>Wall and floor tiling for kitchens, bathrooms and other spaces.</p>
+<p>Professional kitchen and bathroom tiling.</p>
 </div>
 
 <div class="service-card">
-<h3>Renovation Projects</h3>
-<p>Small renovation and improvement projects completed efficiently.</p>
+<h3>Driveways</h3>
+<p>Driveway paving and outdoor surfaces.</p>
 </div>
 
+<div class="service-card">
+<h3>Repairs</h3>
+<p>General property repairs and maintenance.</p>
 </div>
-  <section class="before-after">
-
-<h2>Before & After</h2>
-
-<div class="slider">
-
-<img src="images/before.jpg" class="before">
-<img src="images/after.jpg" class="after">
 
 </div>
 
 </section>
-<div class="before-after">
-<img src="images/before.jpg">
-<img src="images/after.jpg">
-</div>
+
+
+<!-- BEFORE AFTER -->
+
 <section class="before-after">
-<h2>Before & After Projects</h2>
+
+<h2>Before & After</h2>
 
 <div class="ba-slider">
 
-<img src="images/work2.jpg" alt="After work">
+<img src="images/work2.jpg">
 
 <div class="resize">
 
-<img src="images/work1.jpg" alt="Before work">
+<img src="images/work1.jpg">
 
 </div>
 
@@ -255,54 +135,27 @@ Every job is completed professionally with attention to detail.
 </section>
 
 
-<!-- RECENT WORK -->
-<section id="gallery">
+<!-- GALLERY -->
+
+<section id="gallery" class="gallery">
 
 <h2>Recent Work</h2>
 
-<div class="gallery">
+<div class="gallery-grid">
 
 <img src="images/work1.jpg">
 <img src="images/work2.jpg">
-<img src="images/work3.jpg">
-
-</div>
-
-</section>
-<section class="gallery">
-
-<h2>Our Recent Work</h2>
-
-<div class="gallery-grid">
-
-<img src="images/work1.jpg" alt="Work project">
-<img src="images/work2.jpg" alt="Work project">
-<img src="images/work1.jpg" alt="Work project">
-<img src="images/work2.jpg" alt="Work project">
+<img src="images/work1.jpg">
+<img src="images/work2.jpg">
 
 </div>
 
 </section>
 
 
+<!-- REVIEWS -->
 
-
-
-<!-- CONTACT -->
-<section class="reviews container">
-
-<h2>What Customers Say</h2>
-
-<div class="review-slider">
-
-<div class="review">
-⭐⭐⭐⭐⭐  
-<p>Excellent service and very professional work.</p>
-<span>– Local Customer</span>
-</div>
-
-<div class="review">
-⭐⭐⭐⭐⭐  <section id="reviews">
+<section id="reviews" class="reviews">
 
 <h2>Customer Reviews</h2>
 
@@ -310,73 +163,27 @@ Every job is completed professionally with attention to detail.
 
 <div class="review active">
 ⭐⭐⭐⭐⭐
-<p>Excellent work and very professional.</p>
+<p>Excellent service and very professional work.</p>
 </div>
 
 <div class="review">
 ⭐⭐⭐⭐⭐
-<p>Reliable handyman. Highly recommend.</p>
+<p>Reliable handyman and great communication.</p>
 </div>
 
 <div class="review">
 ⭐⭐⭐⭐⭐
-<p>Great communication and clean work.</p>
+<p>Very clean work and fair price.</p>
 </div>
 
 </div>
 
 </section>
-<p>Reliable handyman, great communication.</p>
-<span>– Homeowner</span>
-</div>
-
-<div class="review">
-⭐⭐⭐⭐⭐  
-<p>Very clean work and fair price. Highly recommended.</p>
-<span>– Client</span>
-</div>
-
-</div>
-
-</section>
-<section class="contact container">
-
-<h2>Get a Free Quote</h2>
-
-<p>Need reliable home maintenance? Contact us today.</p>
-
-<p><strong>Phone:</strong> 07775 443049</p>
-
-<p><strong>Email:</strong> badgerhomemaintenance@gmail.com</p>
-
-<a class="button" href="tel:07775443049">Call Now</a>
-
-</section>
 
 
+<!-- CONTACT -->
 
-<!-- SOCIAL MEDIA -->
-
-<section class="social container">
-
-<h2>Connect With Us</h2>
-
-<a href="https://www.facebook.com/badgerhomemaintenance" target="_blank">Facebook</a>
-
-<a href="https://www.instagram.com/badgerhomemaintenance/" target="_blank">Instagram</a>
-
-<a href="https://nextdoor.co.uk/page/badger-home-maintenance" target="_blank">Nextdoor</a>
-
-</section>
-
-
-
-<!-- GOOGLE PROFILE -->
-
-<section class="google container">
-
-<h2>
-<section id="contact">
+<section id="contact" class="contact">
 
 <h2>Get a Free Quote</h2>
 
@@ -393,9 +200,11 @@ Every job is completed professionally with attention to detail.
 </form>
 
 </section>
-<section>
 
-<h2>Our Location</h2>
+
+<!-- MAP -->
+
+<section class="map">
 
 <iframe
 src="https://www.google.com/maps?q=London&output=embed"
@@ -405,10 +214,32 @@ style="border:0;">
 </iframe>
 
 </section>
-<div class="floating">
 
-<a href="tel:+447775443496" class="call">📞</a>
 
-<a href="https://wa.me/447775443496" class="whatsapp">💬</a>
+<!-- FLOATING BUTTONS -->
+
+<div class="floating-buttons">
+
+<a href="tel:07775443049" class="call-btn">📞</a>
+
+<a href="https://wa.me/447775443049" class="whatsapp-btn">💬</a>
 
 </div>
+
+
+<!-- SCRIPTS -->
+
+<script>
+
+let reviews = document.querySelectorAll(".review");
+let index = 0;
+
+setInterval(() => {
+
+reviews.forEach(r => r.classList.remove("active"));
+
+index++;
+
+if(index >= reviews.length){index = 0;}
+
+reviews
