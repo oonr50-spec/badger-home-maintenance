@@ -363,3 +363,12 @@ transition:0.4s;
 .gallery img:hover{
 transform:scale(1.08);
 }
+.review{
+display:none;
+text-align:center;
+font-size:18px;
+}
+
+.review.active{
+display:block;
+}
