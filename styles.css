@@ -297,7 +297,32 @@ transition:.3s;
 button:hover{
 background:#e18b4e;
 }
+.contact-form{
+display:flex;
+flex-direction:column;
+gap:15px;
+max-width:500px;
+margin:auto;
+}
 
+.contact-form input,
+.contact-form textarea,
+.contact-form select{
+padding:12px;
+border-radius:6px;
+border:1px solid #ccc;
+font-size:16px;
+width:100%;
+}
+
+.contact-form textarea{
+min-height:120px;
+resize:vertical;
+}
+
+.contact-form button{
+cursor:pointer;
+}
 /* ================================
 SOCIAL LINKS
 ================================ */
