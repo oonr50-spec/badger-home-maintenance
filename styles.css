@@ -55,7 +55,7 @@ padding:0 20px;
 
 .logo{
 color:white;
-font-size:22px;
+font-size:44px;
 font-weight:bold;
 }
 
@@ -147,21 +147,6 @@ color:#2c5e4f;
 /* ================================
 SERVICES GRID
 ================================ */
-
-.service-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-}
-
-.service-card{
-background:#2c5e4f;
-color:white;
-padding:30px;
-border-radius:10px;
-text-align:center;
-transition:.35s;
-}
 
 .service-card:hover{
 transform:translateY(-8px);
