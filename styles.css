@@ -316,60 +316,41 @@ to{opacity:1}
 CONTACT FORM
 ================================ */
 
-form{
-max-width:520px;
+.contact{
+padding:60px;
+text-align:center;
+background:white;
+}
+
+.contact form{
+max-width:500px;
 margin:auto;
-display:flex;
-flex-direction:column;
-gap:16px;
-}
-
-input,textarea{
-padding:14px;
-border-radius:6px;
-border:1px solid #ccc;
-font-size:15px;
-}
-
-button{
-background:#f4a261;
-border:none;
-padding:14px;
-color:white;
-font-weight:bold;
-border-radius:6px;
-cursor:pointer;
-transition:.3s;
-}
-
-button:hover{
-background:#e18b4e;
-}
-.contact-form{
 display:flex;
 flex-direction:column;
 gap:15px;
-max-width:500px;
-margin:auto;
 }
 
-.contact-form input,
-.contact-form textarea,
-.contact-form select{
+.contact input,
+.contact select,
+.contact textarea{
 padding:12px;
 border-radius:6px;
 border:1px solid #ccc;
 font-size:16px;
-width:100%;
 }
 
-.contact-form textarea{
-min-height:120px;
-resize:vertical;
-}
-
-.contact-form button{
+.contact button{
+background:#ff7a18;
+color:white;
+border:none;
+padding:14px;
+font-size:18px;
+border-radius:30px;
 cursor:pointer;
+}
+
+.contact button:hover{
+background:#ff5500;
 }
 /* ================================
 SOCIAL LINKS
