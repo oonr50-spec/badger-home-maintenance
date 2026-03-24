@@ -11,8 +11,9 @@ box-sizing:border-box;
 body{
 font-family:'Poppins',sans-serif;
 line-height:1.6;
-color:#333;
-background:#f4f6f7;
+color:#e6eef5;
+
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
 }
 
 /* ================================
@@ -278,11 +279,13 @@ SECTION STYLE
 ================================ */
 
 section{
-background:white;
+background:linear-gradient(135deg,#16222a,#3a6073);
+
 border-radius:14px;
 margin:60px auto;
 max-width:1200px;
-box-shadow:0 15px 40px rgba(0,0,0,0.08);
+
+box-shadow:0 15px 40px rgba(0,0,0,0.35);
 }
 
 h2{
@@ -663,49 +666,63 @@ gap:8px;
 
 /* Hover animation */
 
+/* SOCIAL HOVER */
+
 .social-links a:hover{
-transform:translateY(-5px) scale(1.06);
-box-shadow:0 12px 30px rgba(0,0,0,0.35);
+transform:translateY(-6px) scale(1.08);
+box-shadow:0 14px 35px rgba(0,0,0,0.45);
 }
 
-/* Platform colours */
+
+/* PLATFORM COLOURS (STRONGER GRADIENTS) */
 
 .facebook{
-background:linear-gradient(135deg,#1877f2,#3b5998);
+background:linear-gradient(135deg,#1877f2,#0d47a1);
 }
 
 .instagram{
-background:linear-gradient(135deg,#fd5949,#d6249f,#285AEB);
+background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af,#515bd4);
 }
 
 .linkedin{
-background:linear-gradient(135deg,#0077b5,#004182);
+background:linear-gradient(135deg,#0077b5,#003f63);
 }
 
 .nextdoor{
-background:linear-gradient(135deg,#00b246,#008a34);
+background:linear-gradient(135deg,#00c853,#009624);
 }
 
 .checkatrade{
-background:linear-gradient(135deg,#f4a261,#e76f51);
+background:linear-gradient(135deg,#ffb347,#ff7a18);
 }
 
 .shpock{
-background:linear-gradient(135deg,#6a5acd,#483d8b);
+background:linear-gradient(135deg,#7b61ff,#4b2dbf);
 }
+
+
 /* SEO / LOCAL SECTION */
 
 .seo-section{
 
-background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+background:linear-gradient(
+135deg,
+#141e30,
+#243b55,
+#1b2a49
+);
 
 color:white;
 
 text-align:center;
 
-padding:70px 30px;
+padding:80px 30px;
 
-margin-top:60px;
+margin-top:70px;
+
+border-radius:14px;
+
+box-shadow:0 15px 40px rgba(0,0,0,0.35);
 
 }
 /* SOCIAL SECTION */
