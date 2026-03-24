@@ -164,6 +164,22 @@ border-radius:40px;
 text-decoration:none;
 font-weight:600;
 }
+.service-card button{
+
+background:#ffb400;
+border:none;
+padding:12px 20px;
+border-radius:6px;
+font-weight:bold;
+cursor:pointer;
+
+}
+
+.service-card button:hover{
+
+background:#ffcc33;
+
+}
 
 /* ================================
 SECTION STYLE
