@@ -261,6 +261,45 @@ font-size:36px;
 margin-bottom:40px;
 color:#1e6f5c;
 }
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.feature-card{
+padding:30px;
+border-radius:12px;
+font-weight:600;
+font-size:18px;
+text-align:center;
+color:white;
+transition:0.3s;
+box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+.feature-card:hover{
+transform:translateY(-10px) scale(1.03);
+}
+
+/* Different colours */
+
+.insured{
+background:#2ecc71;
+}
+
+.skill{
+background:#3498db;
+}
+
+.reliable{
+background:#f39c12;
+}
+
+.price{
+background:#e74c3c;
+}
 
 /* ================================
 ABOUT
