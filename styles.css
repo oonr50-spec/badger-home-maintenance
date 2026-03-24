@@ -387,25 +387,53 @@ REVIEWS
 ================================ */
 
 .review-slider{
-
 max-width:700px;
 margin:auto;
 text-align:center;
-
 }
 
 .review{
-
 display:none;
 font-size:20px;
-
+padding:35px;
+border-radius:14px;
+color:white;
+box-shadow:0 12px 30px rgba(0,0,0,0.15);
 }
 
+/* Show active review */
 .review.active{
-
 display:block;
 animation:fade 1s;
+}
 
+/* Different colours for each review */
+
+.review:nth-child(1){
+background:linear-gradient(135deg,#1e3c72,#2a5298);
+}
+
+.review:nth-child(2){
+background:linear-gradient(135deg,#ff7a18,#ffb347);
+}
+
+.review:nth-child(3){
+background:linear-gradient(135deg,#11998e,#38ef7d);
+}
+
+.review:nth-child(4){
+background:linear-gradient(135deg,#8e2de2,#4a00e0);
+}
+
+.review:nth-child(5){
+background:linear-gradient(135deg,#ff512f,#dd2476);
+}
+
+/* animation */
+
+@keyframes fade{
+from{opacity:0; transform:translateY(15px);}
+to{opacity:1; transform:translateY(0);}
 }
 
 @keyframes fade{
