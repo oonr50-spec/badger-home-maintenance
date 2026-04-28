@@ -190,27 +190,55 @@ color:white;
 padding:80px 30px;
 }
 
-.services h2{
-color:white;
-}
-
-.services-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
+/* BASE CARD */
 .service-card{
-background:#1f3b63;
-padding:30px;
-border-radius:12px;
-box-shadow:0 10px 30px rgba(0,0,0,0.3);
-transition:.3s;
+padding:35px;
+border-radius:14px;
+color:white;
+box-shadow:0 12px 30px rgba(0,0,0,0.3);
+transition:all 0.35s ease;
 }
 
+/* HOVER */
 .service-card:hover{
-transform:translateY(-10px);
-background:#2c4f85;
+transform:translateY(-10px) scale(1.03);
+filter:brightness(1.1);
+}
+
+/* INDIVIDUAL COLOURS */
+
+.paint{
+background:linear-gradient(135deg,#ff7a18,#ffb347);
+}
+
+.plaster{
+background:linear-gradient(135deg,#667eea,#764ba2);
+}
+
+.bathroom{
+background:linear-gradient(135deg,#00c6ff,#0072ff);
+}
+
+.tiling{
+background:linear-gradient(135deg,#11998e,#38ef7d);
+}
+
+.flooring{
+background:linear-gradient(135deg,#f7971e,#ffd200);
+color:#333;
+}
+
+.garden{
+background:linear-gradient(135deg,#56ab2f,#a8e063);
+color:#333;
+}
+
+.gutter{
+background:linear-gradient(135deg,#373b44,#4286f4);
+}
+
+.driveway{
+background:linear-gradient(135deg,#434343,#000000);
 }
 
 /* ================================
