@@ -71,8 +71,22 @@ background:linear-gradient(135deg,#ff7a18,#ffb347);
 transform:translateY(-3px);
 }
 
+/* NAV CTA BUTTON */
 .nav-cta{
-background:#ff7a18;
+background:linear-gradient(135deg,#ff7a18,#ffb347);
+padding:12px 22px;
+border-radius:30px;
+color:white !important;
+font-weight:600;
+
+box-shadow:0 6px 15px rgba(0,0,0,0.3);
+transition:all 0.3s ease;
+}
+
+/* HOVER */
+.nav-cta:hover{
+background:linear-gradient(135deg,#ff5500,#ff7a18);
+transform:translateY(-2px) scale(1.05);
 }
 
 /* ================================
@@ -319,28 +333,60 @@ cursor:pointer;
 SOCIAL
 ================================ */
 
+/* SOCIAL SECTION BACKGROUND */
 .social{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+padding:60px 20px;
+border-radius:14px;
 text-align:center;
 }
 
-.social-links{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:15px;
-}
-
+/* BUTTON BASE */
 .social-links a{
-padding:12px 25px;
-border-radius:30px;
+padding:15px 25px;
+border-radius:40px;
+font-weight:600;
 color:white;
 text-decoration:none;
-font-weight:600;
-transition:.3s;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+transition:all 0.3s ease;
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
 }
 
+/* HOVER */
 .social-links a:hover{
-transform:scale(1.05);
+transform:translateY(-5px) scale(1.08);
+box-shadow:0 15px 35px rgba(0,0,0,0.4);
+}
+
+/* STRONGER PLATFORM COLOURS */
+
+.facebook{
+background:linear-gradient(135deg,#1877f2,#0d47a1);
+}
+
+.instagram{
+background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af,#515bd4);
+}
+
+.linkedin{
+background:linear-gradient(135deg,#0077b5,#003f63);
+}
+
+.nextdoor{
+background:linear-gradient(135deg,#00c853,#009624);
+}
+
+.checkatrade{
+background:linear-gradient(135deg,#ffb347,#ff7a18);
+}
+
+.shpock{
+background:linear-gradient(135deg,#7b61ff,#4b2dbf);
 }
 
 /* ================================
@@ -371,47 +417,126 @@ text-decoration:none;
 .call-btn{background:#ff7a18;}
 .whatsapp-btn{background:#25D366;}
 
+
 /* ================================
-MOBILE
+MOBILE FIX (CLEAN VERSION)
 ================================ */
 
 @media(max-width:768px){
 
+/* NAV */
 .nav-container{
 flex-direction:column;
-gap:10px;
+gap:12px;
+text-align:center;
 }
 
 .nav-links{
 flex-direction:column;
 gap:10px;
+width:100%;
 }
 
+/* HERO */
 .hero{
 height:auto;
-padding:80px 20px;
+padding:70px 20px;
 }
 
 .hero-title{
-font-size:32px;
+font-size:30px;
+line-height:1.2;
+}
+
+.hero-sub{
+font-size:16px;
 }
 
 .hero-buttons{
 flex-direction:column;
+gap:12px;
 }
 
-.services-grid,
+/* BUTTONS FULL WIDTH */
+.btn-primary,
+.btn-secondary{
+width:100%;
+text-align:center;
+}
+
+/* SECTIONS */
+section{
+margin:25px 12px;
+padding:25px 15px;
+}
+
+/* SERVICES */
+.services-grid{
+display:grid;
+grid-template-columns:1fr;
+gap:15px;
+}
+
+.service-card{
+padding:22px;
+}
+
+/* TEXT */
+h2{
+font-size:24px;
+}
+
+p{
+font-size:15px;
+}
+
+/* GALLERY */
 .gallery-grid{
 grid-template-columns:1fr;
 }
 
+/* SOCIAL */
 .social-links{
 flex-direction:column;
+align-items:center;
 }
 
 .social-links a{
 width:90%;
-text-align:center;
+justify-content:center;
 }
 
+/* CONTACT */
+.contact form{
+padding:20px;
+}
+
+.contact input,
+.contact textarea{
+font-size:14px;
+}
+
+/* FLOAT BUTTONS */
+.call-btn,
+.whatsapp-btn{
+width:55px;
+height:55px;
+font-size:22px;
+}
+
+}
+.btn-primary{
+background:linear-gradient(135deg,#ff7a18,#ffb347);
+color:white;
+padding:16px 35px;
+border-radius:40px;
+font-weight:600;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+transition:all 0.3s ease;
+}
+
+.btn-primary:hover{
+transform:scale(1.08);
+background:linear-gradient(135deg,#ff5500,#ff7a18);
 }
