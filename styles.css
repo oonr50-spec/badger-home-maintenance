@@ -819,3 +819,121 @@ background:#ff5500;
 transform:scale(1.08);
 
 }
+/* ================================
+MOBILE OPTIMISATION
+================================ */
+
+@media(max-width:768px){
+
+/* NAVBAR */
+.nav-container{
+flex-direction:column;
+gap:10px;
+}
+
+.logo{
+font-size:22px;
+text-align:center;
+}
+
+.nav-links{
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+}
+
+/* HERO */
+.hero{
+height:auto;
+padding:80px 20px;
+}
+
+.hero-title{
+font-size:32px;
+line-height:1.2;
+}
+
+.hero-sub{
+font-size:16px;
+}
+
+.hero-buttons{
+flex-direction:column;
+gap:12px;
+}
+
+/* SECTIONS */
+section{
+margin:30px 15px;
+padding:30px 20px;
+}
+
+/* SERVICES */
+.services-grid{
+grid-template-columns:1fr;
+gap:18px;
+}
+
+.service-card{
+padding:22px;
+font-size:15px;
+}
+
+/* TEXT */
+h2{
+font-size:26px;
+}
+
+p{
+font-size:15px;
+}
+
+/* CONTACT FORM */
+.contact form{
+padding:25px;
+}
+
+.contact input,
+.contact select,
+.contact textarea{
+font-size:14px;
+}
+
+/* BUTTONS */
+.btn-primary,
+.contact button{
+width:100%;
+text-align:center;
+}
+
+/* GALLERY */
+.gallery-grid{
+grid-template-columns:1fr;
+}
+
+/* REVIEWS */
+.review{
+font-size:16px;
+padding:20px;
+}
+
+/* SOCIAL LINKS */
+.social-links{
+flex-direction:column;
+align-items:center;
+}
+
+.social-links a{
+width:90%;
+justify-content:center;
+}
+
+/* FLOATING BUTTONS */
+.call-btn,
+.whatsapp-btn{
+width:55px;
+height:55px;
+font-size:22px;
+}
+
+}
