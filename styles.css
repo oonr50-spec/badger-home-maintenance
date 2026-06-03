@@ -540,3 +540,31 @@ transition:all 0.3s ease;
 transform:scale(1.08);
 background:linear-gradient(135deg,#ff5500,#ff7a18);
 }
+.mascot {
+    position: fixed;
+    bottom: 20px;
+    left: -60px;
+    width: 60px;
+    height: 60px;
+    background: #00bcd4;
+    border-radius: 50%;
+    animation: walkAcross 20s linear infinite,
+               bounce 0.4s infinite alternate;
+}
+
+.eye {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    top: 20px;
+}
+
+.left {
+    left: 18px;
+}
+
+.right {
+    right: 18px;
+}
