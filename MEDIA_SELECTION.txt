@@ -1,0 +1,42 @@
+MEDIA SELECTION & PROJECT MATCHING
+==================================
+
+The uploaded ZIP contained 109 photographs and 7 videos. The final website intentionally uses a smaller selection so mobile visitors see the strongest evidence without downloading everything.
+
+Key before / after matches used
+- Decking restoration
+  BEFORE: WhatsApp Image 2026-08-14 at 10.06.56 (1).jpeg
+  AFTER:  WhatsApp Image 2026-08-14 at 10.06.23 (1).jpeg
+  Reason: same large deck project; the before image clearly shows dismantled / weathered sections and the after image shows the restored boards and privacy screening.
+
+- New turf / garden ground preparation
+  BEFORE: WhatsApp Image 2026-08-14 at 10.07.12 (5).jpeg
+  AFTER:  WhatsApp Image 2026-08-14 at 10.07.12 (7).jpeg
+  Reason: clear progression from prepared bare ground to finished green turf at the same property.
+
+- Decorating / feature wall
+  BEFORE: WhatsApp Image 2026-08-14 at 10.08.20 (4).jpeg
+  AFTER:  WhatsApp Image 2026-08-14 at 10.08.20 (2).jpeg
+  Reason: preparation / stripped wall and the finished decorative wall are visually easy for a customer to understand.
+
+- Timber / enclosure-floor repair
+  BEFORE: WhatsApp Image 2026-08-14 at 10.06.22 (5).jpeg
+  AFTER:  WhatsApp Image 2026-08-14 at 10.06.22 (4).jpeg
+  Reason: damaged unsafe floor is visible before, then the replacement dark boards are clearly visible after.
+
+Other strong evidence selected
+- Sandstone patio / repointing: 10.06.40 images
+- Decorative railing / outdoor carpentry: 10.06.23 images
+- Garden border / decorative mulch: 10.06.45 images
+- Finished bathroom / tiling: 2026-08-07 images
+- Paving groundwork: 10.07.02 images
+- Floor tiling: 10.08.20 images
+
+Video use
+Three short clips were selected and trimmed/compressed for mobile performance:
+- garden-work.mp4
+- tiling-work.mp4
+- groundwork.mp4
+
+Image treatment
+Selected photos were auto-rotated from EXIF data, lightly improved for contrast / colour / sharpness, resized where appropriate, and exported as WebP. The edits are deliberately mild so the work still looks authentic rather than artificially enhanced.
